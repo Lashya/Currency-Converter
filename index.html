@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>INR Converter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="currencies">
+                <h1>INR Converter</h1>
+                <div>
+                    <select id="fromCurrencyList" onchange="getCurrency(); calculate()" >
+                        <option value="USD">United States dollar</option>
+                        <option value="EUR">Euro</option>
+                        <option value="JPY">Yen</option>
+                    </select>
+                </div>
+                <input type="number" id="fromInput" placeholder="Enter the amount" oninput="calculate()">                   
+                <input type="number" id="result" disabled="disabled" placeholder="INR">      
+            </div>     
+        </div>
+    </body>
+</html>

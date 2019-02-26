@@ -14,7 +14,7 @@ function calculate(){
     getInput = document.getElementById("fromInput").value;
 
     //if input is empty the result should also be empty
-    if(getInput == ""){
+    if(getInput == "0" || getInput == ""){
         document.getElementById("result").value = "";
     }
 
